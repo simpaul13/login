@@ -1,3 +1,15 @@
+<!--
+ 
+  ██████╗ ██████╗ ██████╗ ███████╗    ██╗███████╗    ██╗     ██╗███████╗███████╗██╗
+ ██╔════╝██╔═══██╗██╔══██╗██╔════╝    ██║██╔════╝    ██║     ██║██╔════╝██╔════╝██║
+ ██║     ██║   ██║██║  ██║█████╗      ██║███████╗    ██║     ██║█████╗  █████╗  ██║
+ ██║     ██║   ██║██║  ██║██╔══╝      ██║╚════██║    ██║     ██║██╔══╝  ██╔══╝  ╚═╝
+ ╚██████╗╚██████╔╝██████╔╝███████╗    ██║███████║    ███████╗██║██║     ███████╗██╗
+  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝    ╚═╝╚══════╝    ╚══════╝╚═╝╚═╝     ╚══════╝╚═╝
+                                                                                   
+ 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,28 +23,67 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
+    <!--
+ 
+      ██╗ █████╗ ██╗   ██╗ █████╗ ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗    ██████╗  ██████╗  ██████╗ ████████╗███████╗████████╗██████╗  █████╗ ██████╗ 
+      ██║██╔══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝    ██╔══██╗██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗
+      ██║███████║██║   ██║███████║███████╗██║     ██████╔╝██║██████╔╝   ██║       ██████╔╝██║   ██║██║   ██║   ██║   ███████╗   ██║   ██████╔╝███████║██████╔╝
+ ██   ██║██╔══██║╚██╗ ██╔╝██╔══██║╚════██║██║     ██╔══██╗██║██╔═══╝    ██║       ██╔══██╗██║   ██║██║   ██║   ██║   ╚════██║   ██║   ██╔══██╗██╔══██║██╔═══╝ 
+ ╚█████╔╝██║  ██║ ╚████╔╝ ██║  ██║███████║╚██████╗██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝╚██████╔╝   ██║   ███████║   ██║   ██║  ██║██║  ██║██║     
+  ╚════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     
+                                                                                                                                                              
+ 
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <title>Home</title>
 </head>
-<body>
 
   <div class="background">
 
-    <form action="" method="post">
-      <h1>Login</h1>
+    <div class="card">
+        <form action="" method="post">
 
-      <input type="text">
-      <label for="">Username</label>
-      <input type="password">
-      <label for="">Password</label>
-      <input type="submit" value="Login">
-    </form>
+            <div class="card-header">
+                <p>Login</p>
+            </div>
+            <div class="card-body">
+                <!-- Input of username -->
+                <div class="form-group">
+                    <label for="">Username :</label>
+                    <input type="text" name="username" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+                <!-- Input of password -->
+                <div class="form-group">
+                    <label for="">Password :</label>
+                    <input type="password" name="password" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"  data-toggle="tooltip" data-placement="right" title="Hooray!" checked >
+                        Remember Me
+                    </label>
+                </div>
+            </div>
+            <br>    
+            <!-- Login/Submit Button -->
+            <div class="card-footer">
+                <input name="submit" id="" class="btn btn-primary" type="submit" value="submit">
+            </div>
+
+        </form>
+    </div>
   </div>
 
 
 
-    <!-- JavaScript Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+        
 </body>
 </html>
